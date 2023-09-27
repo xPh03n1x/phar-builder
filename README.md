@@ -23,7 +23,8 @@ php buildPhar.php -s /path/to/source_directory -o /path/to/output_file.phar
 
 ### Requirements
 - PHP 8.0 or later (might work with earlier versions, but it hasn't been tested)
-- PHP Phar installed and enabled.
+- PHP PHAR installed and enabled.
+- In your `php.ini` you need to have `phar.readonly=off` to create PHAR archives
 - Operating systems: Windows, Linux, macOS
 * To use compression you will also need the PHP extension(s):
   * zlib extension for `GZ` compression
